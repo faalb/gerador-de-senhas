@@ -10,7 +10,8 @@ let caracteres = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPGRSTUVWXYZ123456789!
 let copiarSenha = "";
 
 tamanhoDaSenha.innerHTML = botaoDeslizante.value 
-botaoDeslizante.oninput = function() { 
+botaoDeslizante.oninput = function() {
+    tamanhoDaSenha.innerHTML = this.value;
 }
 
 function geradorDeSenha() {
