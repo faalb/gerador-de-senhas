@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gerador de Senhas</title>
+</head>
+<body>
+    <img class="logo" src="assets/logo.png" alt="Gerador de senhas logo">
+    
+    <main class="container-entrada">
+        <span>Tamanho <span id="tamanho-senha"></span> caracteres</span>
+        <input class="botao-deslizante" id="botao-deslizante" type="range" min="5" max="25" value="15"> 
+
+        <button class="botao-gerar-senha" id="botao-gerar-senha" onclick="geradorDeSenha()">Gerar senha</button>
+    </main>
+
+    <div class="container-senha esconder"  id="container-senha" onclick="copiarSenhaGerada()">
+        <span class="titulo">Sua senha gerada foi:</span>
+        <span class="senha" id="senha"></span>
+        <span class="copiar-senha">Clique na senha para copiar. 👆</span>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
